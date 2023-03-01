@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  background: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  background-image: url('./assets/images/DSC_0895.JPG');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-trans {
+  background: rgb(255,0,134);
+  background: linear-gradient(90deg, rgba(255,0,134,0.80) 12%, rgba(3,0,56,0.85) 62%);
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}

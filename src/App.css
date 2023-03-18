@@ -1,5 +1,13 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Kanit', sans-serif;
+  box-sizing: border-box;
+  color: black;
+}
+
+.banner {
+  position: relative;
   height: 100vh;
   background: rebeccapurple;
   display: flex;
@@ -10,10 +18,254 @@
   background-size: cover;
 }
 
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.header {
+  padding: 5px;
+  overflow: hidden;
+  background: #e80046fa;
+}
+
 .bg-trans {
-  background: rgb(255,0,134);
-  background: linear-gradient(90deg, rgba(255,0,134,0.80) 12%, rgba(3,0,56,0.85) 62%);
+  /* background: rgb(195, 34, 105);
+  background: linear-gradient(0deg, rgba(195, 34, 105, 0.55) 3%, rgba(20, 1, 45, 0.80) 48%);
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100vh; */
+}
+
+.logo-set {
+  float: left;
+  height: 80px;
+  width: 80px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  width: 100px;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: white;
+  margin-right: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn.primary {
+  background: white;
+  color: black;
+  border: 1px solid #fff;
+}
+
+.header {
+  padding: 5px;
+  overflow: hidden;
+  background: rgb(16,0,59);
+  background: linear-gradient(90deg, rgba(16,0,59,0.89) 33%, rgba(255,0,108,0.74) 100%);
+}
+
+.menu {
+  float: right;
+  margin-top: 20px;
+}
+
+.btn.no-border {
+  border: none;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+.banner h1 {
+  text-align: center;
+  color: white;
+}
+
+.about-us {
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+.hover-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+.item-box {
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  padding: 20px;
+}
+
+.footer {
+  height: 100px;
+  background: white;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  text-transform: uppercase;
+  color: #666;
+}
+
+.icon-img {
+  width: 100px;
+  height: 100px;
+}
+
+.smart-search {
+  margin-bottom: 50px;
+  background-image: url('./assets/images/DSC_0070.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.smart-search .bg-trans {
+  height: 530px;
+  align-items: center;
+  display: flex;
+  background: linear-gradient(0deg, rgba(195, 34, 105, 0.70) 3%, rgba(20, 1, 45, 0.80) 48%);
+}
+
+.search-box {
+  padding: 25px 15px;
+}
+
+.search-box h2 {
+  text-align: center;
+  color: white;
+  margin-top: 0;
+}
+
+.form-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control select {
+  margin-left: 0px;
+  width: calc(100% - 0px);
+  background: transparent;
+  color: white;
+  border: 1px solid;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-flex;
+}
+
+.form-control {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-control .btn {
+  width: 230px;
+  margin-right: 0px;
+  float: right;
+}
+
+select[name=age_from],
+select[name=age_to] {
+  width: calc(50% - 0px);
+  display: inline-block;
+}
+
+.highlighted-profile {
+  margin-bottom: 50px;
+}
+
+.profile-box {
+  width: 275px;
+  height: 500px;
+  display: inline-flex;
+  padding: 2px;
+}
+
+.profile-item {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.profilepic {
+  height: 240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+}
+
+label.profile-caption {
+  color: black;
+  font-size: 16px;
+  line-height: 36px;
+  position: relative;
+}
+
+.profile-caption span {
+  position: absolute;
+  left: 76px;
+  color: #666;
+  font-size: 15px;
+}
+
+.footer {
+  background-color: rgb(20 1 45);
 }
